@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="contaniner-fluid overflow-hidden bg-light">
+        <br>
+        <div class="d-flex justify-content-center">
+            <h1>SPEED FOOD <div class="p-2 d-inline bg-warning rounded"> HUB</div>
+            </h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p>กรุณากดเลือกอาหาร</p>
+        </div>
+        <div class="d-flex row">
+            <div class="col-md-7">
+                <div class="card ml-5">
+                    <div class="row">
+                        <div class="col-md-4 m-0 p-0 h-1">
+                            <img src="https://cdn.discordapp.com/attachments/705283357692526622/1016032059673804850/e10bc9e5fe4f4a9ea02fefa8e5db725e_1585564934704669243.png"
+                                class="img-fluid rounded float-left" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">ไข่เจียวหมูสับ</h5>
+                                <p class="card-text text-black-50">Delivery by SpeedFoodHub.</p>
+                                <button type="button" class="btn btn-warning mt-5 float-right"
+                                    onclick="one()" id="menu1">Add Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml-5 mt-4">
+                    <div class="row">
+                        <div class="col-md-4 m-0 p-0">
+                            <img src="https://www.naibann.com/wp-content/uploads/2015/09/k6.jpg"
+                                class="img-fluid rounded float-left" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">ข้าวผัดหมู</h5>
+                                <p class="card-text text-black-50">Delivery by SpeedFoodHub.</p>
+                                <button type="button" class="btn btn-warning mt-3 float-right"
+                                    onclick="two()" id="menu2">Add Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ml-5 mt-4">
+                    <div class="row">
+                        <div class="col-md-4 m-0 p-0">
+                            <img src="https://www.sgethai.com/wp-content/uploads/2022/08/6-2.jpg"
+                                class="img-fluid rounded float-left" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">ลาบหมู</h5>
+                                <p class="card-text text-black-50">Delivery by SpeedFoodHub.</p>
+                                <button type="button" class="btn btn-warning mt-5 float-right"
+                                    onclick="three()" id="menu3">Add Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-header bg-primary text-white d-flex">
+                    รายการออเดอร์
+                </div>
+                <ul class="list-group list-group-flush" id="order">
+                </ul>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>

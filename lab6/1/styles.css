@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+.lang {
+    padding: 20px;
+    float: left;
+    width: 30%;
+}
+
+.java-lang {
+    padding: 20px;
+    float: left;
+    width: 40%;
+}
+
+@media screen and (max-width:400px) {
+
+    .lang,
+    .java-lang {
+        width: 100%;
+    }
+}

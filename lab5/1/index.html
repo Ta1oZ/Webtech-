@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - 1</title>
+</head>
+
+<body>
+    <script>
+        let requestURL = 'intel.json';
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                ExtractData(JSON.parse(request.responseText));
+            }
+        };
+        request.open("GET", requestURL, true);
+        request.send();
+
+        function ExtractData(data) {
+            for (let i = 0; i < data.person.length; i++) {
+                document.write(data.person[i].id + " " + "<b>" + data.person[i].firstname + "</b>" + " " + "<b>" + data.person[i].lastname + "</b>" + " " + data.person[i].gender + " is a " + data.person[i].position + ", " + data.person[i].address + "<br>")
+            }
+        }
+    </script>
+</body>
+
+</html>

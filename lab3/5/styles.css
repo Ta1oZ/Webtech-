@@ -1,0 +1,19 @@
+.show {
+    width: 400px;
+    height: 200px;
+    background-image: url('https://i.pinimg.com/originals/63/a1/2d/63a12dca18b4947ce56cd09e87afacb3.png');
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.show:hover {
+    transform: scale(1.1);
+}
+
+.show p {
+    color: black;
+    font-size: 20px;
+    padding-left: 2%;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}

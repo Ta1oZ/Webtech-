@@ -1,0 +1,47 @@
+body {
+    color: white;
+    max-width: 800px;
+    margin: auto;
+
+}
+
+.user1 {
+    margin: 5;
+    padding: 10;
+    background-color: red;
+    width: 60%;
+}
+
+.user2 {
+    margin: 5;
+    padding: 10;
+    background-color: blue;
+    width: 90%;
+}
+
+.user3 {
+    margin: 5;
+    padding: 10;
+    background-color: green;
+    width: 50%;
+}
+
+.user4 {
+    margin: 5;
+    padding: 10;
+    background-color: gray;
+    width: 80%;
+}
+
+.user5 {
+    margin: 5;
+    padding: 10;
+    background-color: rgb(175, 175, 53);
+    width: 75%;
+}
+
+table,
+th,
+td {
+    border-bottom: 1px solid black;
+}

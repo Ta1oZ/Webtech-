@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+:root
+{
+    --bg-color: #DFE69F;
+    --main-color: #FF6E00;
+    --2nd-main-color: black;
+    --text-color: black;
+    --big-font: 5rem;
+    --h2-font: 1.9rem;
+    --p-font: 1rem;
+}
+body
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 24px 14%;
+    transition: .3s;
+}
+.logo
+{
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+span
+{
+    color: var(--main-color);
+}
+.navbar
+{
+    display: flex;
+}
+.navbar a
+{
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover
+{
+    background: var(--main-color);
+    transition: .3s;
+}
+#menu-icon
+{
+    font-size: 28px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section
+{
+    padding: 120px 14%;
+}
+.home
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    align-items: center;
+}
+.home-img img
+{
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    border-radius: 100%;
+}
+.home-text h5
+{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.home-text h1
+{
+    font-size: var(--big-font);
+    color: var(--text-color);
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+.home-text h6
+{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.home-text p
+{
+    max-width: 470px;
+    font-size: var(--p-font);
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--2nd-main-color);
+}
+.about
+{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 5rem;
+    align-items: center;
+}
+.about-img img
+{
+    max-width: 100%;
+    width: 580px;
+    height: auto;
+}
+.about-text h3
+{
+    color: var(--text-color);
+    font-size: 30ox;
+    font-weight: 300;
+    letter-spacing: 6px;
+    margin: 0 0 30ox;
+}
+.about-text h2
+{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: var(--h2-font);
+    line-height: 1.2;
+    max-width: 470px;
+    margin-bottom: 2rem;
+}
+.about-text p
+{
+    max-width: 570px;
+    font-size: var(--p-font);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--2nd-main-color);
+}
+.count
+{
+    margin-bottom: 2rem;
+}
+.about-text .count a
+{
+    color: var(--2nd-main-color);
+    margin-right: 20px;
+    word-spacing: 5px;
+}
+.count span
+{
+    color: var(--text-color);
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.center
+{
+    text-align: center;
+}
+.center h3
+{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+.contact-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.4rem;
+}
+.row
+{
+    background: #FF6E00;
+    padding: 60px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: all .40s;
+}
+.row i
+{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.row h3
+{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+.row p
+{
+    font-size: 18px;
+    color: var(--2nd-main-color);
+    line-height: 30px;
+}
+.resume-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.4rem;
+}
+.box
+{
+    background: #FF6E00;
+    padding: 40px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .40s;
+}
+.box h6
+{
+    color: #3e4455;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.box h4
+{
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+.box p
+{
+    font-size: var(--p-font);
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+    line-height: 1.8rem;
+    color: var(--2nd-main-color);
+}

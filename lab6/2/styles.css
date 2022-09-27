@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-group {
+    width: 50%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (max-width:600px) {
+    img {
+        width: 100%;
+    }
+
+    .pic-group {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+    }
+}
